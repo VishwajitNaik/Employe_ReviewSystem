@@ -1,0 +1,55 @@
+<style>
+  .continr{
+    background-image: linear-gradient(to right bottom, #692049, #751f5f, #7b2279, #792b98, #6a3aba, #5855d1, #3e6ce5, #0082f5, #009ff2, #1ab6e4, #75c8d7, #b2d6d4);
+    height: 120vh;
+  }
+  .from_on{
+    background-image: linear-gradient(to right bottom, #692049, #751f5f, #7b2279, #792b98, #6a3aba, #5855d1, #3e6ce5, #0082f5, #009ff2, #1ab6e4, #75c8d7, #b2d6d4);
+    height: 70vh;  
+  }
+</style>
+
+<div class="d-flex continr justify-content-center p-4 p-md-0">
+  <form
+    class="rounded from_on p-3 col-12 col-md-4 my-4 shadow-lg"
+    method="POST"
+    action="/create-session"
+  >
+    <h3 class="mb-4 text-center">Sign in</h3>
+    <!-- Email input -->
+    <div class="form-outline mb-3">
+      <label class="form-label" for="email">Email address</label>
+      <input type="email" id="email" name="email" class="form-control" />
+    </div>
+
+    <!-- Password input -->
+    <div class="form-outline mb-3">
+      <label class="form-label" for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        class="form-control"
+      />
+    </div>
+
+    <div>
+      <!-- Login button -->
+      <button
+        type="submit"
+        class="btn btn-primary btn-block fw-semibold"
+        style="width: 100%"
+      >
+        LOGIN
+      </button>
+    </div>
+    <div>
+      <hr />
+    </div>
+
+    <!-- Link to redirect to signup page -->
+    <div class="text-center">
+      <p>Not an user? <a href="/sign-up" style="color:white">Register</a></p>
+    </div>
+  </form>
+</div>
